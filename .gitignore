@@ -23,4 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 src/services/api-client.ts
-src/services/api-client.ts
