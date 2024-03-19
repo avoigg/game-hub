@@ -4,12 +4,11 @@ import GameGrid from "./components/GameGrid";
 import GenreList from "./components/GenreList";
 import {useState} from "react";
 import {Genre} from "./hooks/useGenre";
-import PlatformIconList from "./components/PlatformIconList";
 import {PlatformSelector} from "./components/PlatformSelector";
 import {Platform} from "./hooks/usePlatforms";
 import {SortSelector} from "./components/SortSelector";
 import {GameHeading} from "./components/GameHeading";
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
+
 
 export interface GameQuery {
   genre: Genre | null;
