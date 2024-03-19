@@ -9,6 +9,7 @@ import {PlatformSelector} from "./components/PlatformSelector";
 import {Platform} from "./hooks/usePlatforms";
 import {SortSelector} from "./components/SortSelector";
 import {GameHeading} from "./components/GameHeading";
+import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -20,8 +21,7 @@ export interface GameQuery {
 function App() {
 
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
-  
-  
+
   return (
     <Grid
       templateAreas={{
@@ -54,6 +54,7 @@ function App() {
         <GameGrid gameQuery={gameQuery}/>
       </GridItem>
     </Grid>
+
   );
 }
 
